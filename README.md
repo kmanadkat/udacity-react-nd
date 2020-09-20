@@ -2,7 +2,7 @@
 
 This Nanodegree teaches in depth these topics : React Fundamentals, React & Redux, and finally React Native. It contains several hands-on projects giving experience of learning and building industry applications from ground level. Enroll date : 16-09-2020. Below is my course log.
 
-## React Fundamentals 📐📏
+## [React Fundamentals](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals) 📐📏
 
 ### Learnt following topics 🧠
 
@@ -17,7 +17,7 @@ This Nanodegree teaches in depth these topics : React Fundamentals, React & Redu
 
 ### Completed following Exercises & Projects 🕹
 
-1. Rendering User Objects with JSX & Advanced ES6 Filter & Map methods - 1 Small Exercises
-3. Component Composition & Simple State Management - 2 Chats
-2. Advanced State Management with Controlled Components - 3 GamersList
-4. Browser Router, Link, Route, History API & Statemanagement - 4 Contacts With API
+1. Rendering User Objects with JSX & Advanced ES6 Filter & Map methods - [1 Small Exercises](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals/1%20Small%20Exercises)
+3. Component Composition & Simple State Management - [2 Chats](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals/2%20Chats)
+2. Advanced State Management with Controlled Components - [3 GamersList](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals/3%20GamersList)
+4. Browser Router, Link, Route, History API & Statemanagement - [4 Contacts With API](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals/4%20Contacts%20With%20API)

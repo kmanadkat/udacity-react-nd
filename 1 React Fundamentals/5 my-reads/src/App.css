@@ -1,0 +1,29 @@
+.image-shadow:after {
+  transform: scale(0.80) translate(-60%, 15%);
+  filter: blur(14px);
+  opacity: 1;
+  content: '';
+  position: absolute;
+  height: 200px;
+  width: 150px;
+  background-image: inherit;
+  background-size: contain;
+  z-index: -1;
+  transition: all .3s ease;
+  background-position: bottom center;
+}
+
+.image-shadow:hover.image-shadow:after{
+  transform: scale(0.80) translate(-60%, 9%);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1a1e22;
+  text-decoration: none;
+  background-color: #d9e0e6;
+}
+
+.dropdown-item.disabled{
+  background-color: #b6bfc4;
+  color: #2d2d2d;
+}

@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/udacity-react-nd/static/css/main.4a08670e.chunk.css",
+    "main.js": "/udacity-react-nd/static/js/main.bec1eb15.chunk.js",
+    "main.js.map": "/udacity-react-nd/static/js/main.bec1eb15.chunk.js.map",
+    "runtime-main.js": "/udacity-react-nd/static/js/runtime-main.5641b959.js",
+    "runtime-main.js.map": "/udacity-react-nd/static/js/runtime-main.5641b959.js.map",
+    "static/js/2.6e13d874.chunk.js": "/udacity-react-nd/static/js/2.6e13d874.chunk.js",
+    "static/js/2.6e13d874.chunk.js.map": "/udacity-react-nd/static/js/2.6e13d874.chunk.js.map",
+    "index.html": "/udacity-react-nd/index.html",
+    "precache-manifest.0d9100aaa6affc44b746583b890efa06.js": "/udacity-react-nd/precache-manifest.0d9100aaa6affc44b746583b890efa06.js",
+    "service-worker.js": "/udacity-react-nd/service-worker.js",
+    "static/css/main.4a08670e.chunk.css.map": "/udacity-react-nd/static/css/main.4a08670e.chunk.css.map",
+    "static/js/2.6e13d874.chunk.js.LICENSE.txt": "/udacity-react-nd/static/js/2.6e13d874.chunk.js.LICENSE.txt",
+    "static/media/logo.png": "/udacity-react-nd/static/media/logo.34bf1968.png",
+    "static/media/noThumbnail.png": "/udacity-react-nd/static/media/noThumbnail.b798ff64.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5641b959.js",
+    "static/js/2.6e13d874.chunk.js",
+    "static/css/main.4a08670e.chunk.css",
+    "static/js/main.bec1eb15.chunk.js"
+  ]
+}

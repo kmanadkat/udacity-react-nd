@@ -2,7 +2,7 @@
   "name": "my-reads",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://kmanadkat.github.io/udacity-react-nd/",
+  "homepage": "https://kmanadkat.github.io/udacity-react-nd",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm start build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udacity Todo Goals</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>
+  <script src="https://unpkg.com/react@16.3.0-alpha.1/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.0-alpha.1/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/redux-thunk@2.2.0/dist/redux-thunk.min.js"></script>
+  <script src="https://unpkg.com/react-redux@5.0.6/dist/react-redux.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    .completed{
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script src="./api.js"></script>
+  <script src="main.js"></script>
+  <script type="text/babel">
+
+    function List(props) {
+      return (
+        <ul>
+          {props.items.map(item => (
+            <li key={item.id}>
+              <span
+                onClick={()=> props.toggle && props.toggle(item.id)}
+                style={{textDecoration: item.complete ? 'line-through' : 'none'}}
+              >{item.name} </span>
+              <button onClick={() => props.remove(item)}>X</button>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+
+    class Todos extends React.Component{
+      addItem = (event) => {
+        event.preventDefault(); 
+        this.props.dispatch(handleAddTodo(this.input.value, () => this.input.value = ''))
+      }
+
+      removeItem = (todo) => {
+        this.props.dispatch(handleDeleteTodo(todo));
+      }
+
+      toggleItem = (id) => {
+        this.props.dispatch(handleToggleTodo(id));
+      }
+
+      render() {
+        return (
+          <div className="col-md-6">
+            <h3>Todos</h3>
+            <div className="form-group mt-4">
+              <label htmlFor="">Add Todo</label>
+              <input 
+                type="text"
+                className="form-control w-75"
+                placeholder="Go for walk, grocery shopping.."
+                ref={(input) => this.input = input}
+              />
+              <button
+                className="btn btn-dark mt-3 mb-4"
+                onClick={this.addItem}
+                >Add Todos</button>
+              <List 
+                items={this.props.todos}
+                remove={this.removeItem}
+                toggle={this.toggleItem}
+              />
+            </div>
+          </div>
+        );
+      }
+    }
+
+    class Goals extends React.Component{
+      addItem = (event) => {
+        event.preventDefault();
+        this.props.dispatch(handleAddGoal(this.input.value, () => this.input.value = ''));
+      }
+      removeItem = (goal) => {
+        this.props.dispatch(handleDeleteGoal(goal))
+      }
+      render() {
+        return (
+          <div className="col-md-6">
+            <h3>Goals</h3>
+            <div className="form-group mt-4">
+              <label htmlFor="">Add Goal</label>
+              <input 
+                type="text" 
+                className="form-control w-75"
+                placeholder="Learn Redux, Lose 8kgs in 2 months.."
+                ref={(input) => this.input = input} />
+              <button className="btn btn-dark mt-3 mb-4"
+                onClick={this.addItem}>Add Goal</button>
+              <List items={this.props.goals} remove={this.removeItem}/>
+            </div>
+          </div>
+        )
+      }
+    }
+
+    class App extends React.Component{
+      componentDidMount() {
+        const {dispatch} = this.props;
+        dispatch(handleInitialData());
+      }
+      render() {
+        return (
+          <React.Fragment>
+            <nav className="navbar navbar-expand navbar-dark bg-dark">
+              <span className="navbar-brand mx-auto">Redux React Binding Store Tutorial</span>
+            </nav>
+            <section className="container mt-5 py-5">
+              <div className="row">
+                {this.props.loading 
+                  ? (<div className="text-center col-12"><div className="spinner-grow" role="status"></div></div>) : (
+                  <React.Fragment>
+                    <ConnectedTodos />
+                    <ConnectedGoals />
+                  </React.Fragment>
+                )}
+              </div>
+            </section>
+          </React.Fragment>
+        )
+      }
+    }
+
+
+    const ConnectedTodos = ReactRedux.connect((state) => ({
+      todos: state.todos
+    }))(Todos)
+
+    const ConnectedGoals = ReactRedux.connect((state) => ({
+      goals: state.goals
+    }))(Goals)
+
+    const ConnectedApp = ReactRedux.connect((state) => ({
+      loading: state.loading
+    }))(App)
+
+    ReactDOM.render(
+      <ReactRedux.Provider store={store}>
+        <ConnectedApp />
+      </ReactRedux.Provider>,
+      document.getElementById('app')
+    );
+  </script>
+</body>
+</html>

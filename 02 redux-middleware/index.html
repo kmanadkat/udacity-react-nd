@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Udacity Todo Goals</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    .completed{
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a class="navbar-brand mx-auto" href="#">Redux Store Tutorial</a>
+  </nav>
+
+  <section class="container mt-5 py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Todos</h3>
+        <div class="form-group mt-4">
+          <label for="">Add Todo</label>
+          <input type="text" class="form-control w-75" id="todo" placeholder="Go for walk, grocery shopping..">
+          <button class="btn btn-dark mt-3 mb-4" id="addTodo">Add Todos</button>
+          <ul id="todos"></ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Goals</h3>
+        <div class="form-group mt-4">
+          <label for="">Add Goal</label>
+          <input type="text" class="form-control w-75" id="goal" placeholder="Learn Redux, Lose 8kgs in 2 months..">
+          <button class="btn btn-dark mt-3 mb-4" id="addGoal">Add Goal</button>
+          <ul id="goals"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>

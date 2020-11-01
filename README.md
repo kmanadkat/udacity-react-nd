@@ -16,3 +16,12 @@ This Nanodegree teaches in depth these topics : React Fundamentals, React & Redu
 9. React Redux Store with Thunk Middleware
 10. React Native with Stack & Bottom Navigation.
 11. Local Notifications & Geo Location APIs integration in React Native
+
+
+### In course + Assignment Projects ⛳️
+
+1. [My Reads - React Js & React Router Fundamentals](https://github.com/kmanadkat/ud-my-reads)
+2. [UdaciChirper - React Js & Redux Basics Project](https://github.com/kmanadkat/udacity-react-nd/tree/master/07%20reactnd-chirper-app)
+3. [Would You Rather - React Js & Redux Adcanced Project](https://github.com/kmanadkat/ud-would-you-rather)
+4. [UdaciFitness React Native App](https://github.com/kmanadkat/ud-udacifitness)
+5. [FlashCards React Native App](https://github.com/kmanadkat/ud-flash-cards)

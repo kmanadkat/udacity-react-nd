@@ -18,7 +18,7 @@ This Nanodegree teaches in depth these topics : React Fundamentals, React & Redu
 11. Local Notifications & Geo Location APIs integration in React Native
 
 
-### In course + Assignment Projects ⛳️
+### In course + assignment projects ⛳️
 
 1. [My Reads - React Js & React Router Fundamentals](https://github.com/kmanadkat/ud-my-reads)
 2. [UdaciChirper - React Js & Redux Basics Project](https://github.com/kmanadkat/udacity-react-nd/tree/master/07%20reactnd-chirper-app)

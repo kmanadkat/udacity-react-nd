@@ -2,7 +2,6 @@
 
 This Nanodegree teaches in depth these topics : React Fundamentals, React & Redux, and finally React Native. It contains several hands-on projects giving experience of learning and building industry applications from ground level. Enroll date : 16-09-2020. Below is my course log.
 
-## [React Fundamentals](https://github.com/kmanadkat/udacity-react-nd/tree/master/1%20React%20Fundamentals) 📐📏
 
 ### Learnt following topics 🧠
 
@@ -14,4 +13,6 @@ This Nanodegree teaches in depth these topics : React Fundamentals, React & Redu
 6. Lifecycle events & Making HTTP requests in componentDidMount() method
 7. Sequence of Lifecycle Events during Addition to DOM & Re-rendering of Components
 8. React Router - BrowserRouter, Link, Route with history API
-
+9. React Redux Store with Thunk Middleware
+10. React Native with Stack & Bottom Navigation.
+11. Local Notifications & Geo Location APIs integration in React Native
